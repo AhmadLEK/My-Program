@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9FF"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_1"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/firstName2"
+        style="@style/TextStyle"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/radius"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName|textCapSentences"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        tools:ignore="Autofill,TouchTargetSizeCheck" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        
+        app:layout_constraintEnd_toEndOf="@+id/firstName2"
+        app:layout_constraintStart_toStartOf="@+id/firstName2"
+        app:layout_constraintTop_toBottomOf="@+id/firstName2"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            style="@style/TextStyle"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/radius_button"
+        android:onClick="clickPage"
+        android:text="@string/login"
+        android:textColor="@color/www"
+        app:layout_constraintEnd_toEndOf="@+id/passwordName"
+        app:layout_constraintStart_toStartOf="@+id/passwordName"
+        app:layout_constraintTop_toBottomOf="@+id/passwordName"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,UnknownId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

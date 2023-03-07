@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextStyle" parent="">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/grey</item>
+
+    </style>
+    
+    <style name="SearchStyle" parent="">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/w2</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
